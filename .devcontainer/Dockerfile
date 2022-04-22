@@ -20,3 +20,6 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 ENV PATH=$HOME/.poetry/bin:$PATH \
 	POETRY_VIRTUALENVS_CREATE=false
+
+COPY pyproject.toml poetry.lock ./
+RUN $HOME/.poetry/bin/poetry install
