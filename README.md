@@ -13,8 +13,9 @@ Many times, new developers approach SQL Alchemy as an ORM only and typically in 
 
 2. Install the [Remote Containers extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). This allows you to open this project into a bootstrapped docker container inside of VS Code with all dependencies, extensions, etc. installed and manged for you.
 
-3. Open this project in VS Code - a dialog box should appear recognizing that this project is configured with a devcontainer.json and asking if you would like to reopen the project in the container - select **yes reopen**. 
+3. Open this project in VS Code - a dialog box should appear recognizing that this folder contains a Dev Container configuration file and asking if you would like to reopen the project in the container - select **Reopn in Container**. 
 
 4. Wait a few minutes as everything gets setup.
 
 5. Open the *.ipynb files in VS Code
+    * note there's an extension pre-installed for you to view the postgres database that gets automatically setup
